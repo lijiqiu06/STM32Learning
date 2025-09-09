@@ -11,9 +11,11 @@ int main()
 	Key_Init();
 	while(1)
 	{
-		if(Key_Check(1,KEY_CLICK)) count++;
+		if(Key_Check(1,KEY_CLICK)) 
+			count++;
 		OLED_Printf(0,0,OLED_8X16,"%d",count);
 		OLED_Update();
+		
 	}
 	
 }
